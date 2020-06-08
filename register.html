@@ -7,20 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="css/register.css">
 
-    <title>Entrar HT</title>
+    <title>Registro</title>
+
 </head>
 
 <body>
+
     <!-- Navbar Starts-->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="./index.html" id="navLogo">
+        <a class="navbar-brand" href="#" id="navLogo">
             <img src="./imgs/heartbeat.png" id="brandLogo"> Health Track
         </a>
 
@@ -32,19 +33,19 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link item-nav" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Entrar</a>
+                    <a class="nav-link item-nav" href="./login.html">Entrar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Planos</a>
+                    <a class="nav-link item-nav" href="#">Planos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
+                    <a class="nav-link item-nav" href="#">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nós</a>
+                    <a class="nav-link item-nav" href="#">Sobre nós</a>
                 </li>
             </ul>
         </div>
@@ -56,27 +57,38 @@
 
         <form class="login-form text-center">
 
-            <h1 class="mb-5 font-weight-light text-uppercase">Login</h1>
+            <h1 class="mb-2 font-weight-light">Dados cadastrais</h1>
             <div class="form-group">
                 <input type="text" class="form-control rounded-pill form-control-lg" placeholder="E-mail">
             </div>
             <div class="form-group">
+                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Nome Completo">
+            </div>
+            <select class="form-control rounded-pill form-control-lg form-group">
+                <option>Masculino</option>
+                <option>Feminino</option>
+            </select>
+            <div class="form-group">
                 <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Senha">
             </div>
-            <div class="forgot-link d-flex align-items-center justify-content-between">
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="remember">
-                    <label for="remember">Lembrar Senha</label>
-                </div>
-                <a href="#">Esqueceu sua Senha?</a>
+            <div class="form-group">
+                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar senha">
             </div>
-            <button type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">Login</button>
-            <p class="mt-3 font-weight-normal"> Não tem uma conta ainda? <a href="./register.html"><strong>Registre-se Agora</strong></a></p>
+
+            <h3 class="mb-2 my-2 font-weight-light">Informações básicas</h3>
+            <div class="form-group">
+                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Altura em metros ex: 1,80">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Peso em kgs ex: 96">
+            </div>
+
+            <button type="submit"
+                class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg">Cadastrar</button>
+
         </form>
 
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
