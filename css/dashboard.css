@@ -1,0 +1,24 @@
+body{
+    background-color:#575451;
+}
+
+.lead{
+    color: lightcoral;
+}
+
+.card-title, .card-text{
+    text-align: center;
+}
+
+.atividades{
+    text-align: center;
+}
+
+.card{
+    background-color: silver;
+}
+
+.list-group-item{
+    background-color: #575451;
+    color: lightcoral;
+}
