@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
 
-    <title>Registro</title>
-
+    <title>Nova Atividade</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <!-- Navbar Starts-->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#" id="navLogo">
+        <a class="navbar-brand" href="./index.html" id="navLogo">
             <img src="./imgs/heartbeat.png" id="brandLogo"> Health Track
         </a>
 
@@ -52,44 +52,66 @@
     </nav>
     <!-- Navbar Ends -->
 
-    <!-- Login Form starts -->
+    <!-- New activity form starts -->
+
     <div class="login-container d-flex align-items-center justify-content-center">
 
         <form class="login-form text-center">
 
-            <h1 class="mb-2 font-weight-light">Dados cadastrais</h1>
-            <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="E-mail">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control rounded-pill form-control-lg" placeholder="Nome Completo">
-            </div>
+            <h1 class="mb-2 font-weight-light">Nova Atividade</h1>
             <select class="form-control rounded-pill form-control-lg form-group">
-                <option>Masculino</option>
-                <option>Feminino</option>
+                <option>Corrida</option>
+                <option>Bike</option>
+                <option>Surf</option>
+            </select>
+            <h4 class="mb-1 font-weight-light">Nível de intensidade</h5>
+            <select class="form-control rounded-pill form-control-lg form-group">
+                <option>Alta</option>
+                <option>Média</option>
+                <option>Baixa</option>
             </select>
             <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Senha">
+                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Duração em minutos">
             </div>
-            <div class="form-group">
-                <input type="password" class="form-control rounded-pill form-control-lg" placeholder="Confirmar senha">
-            </div>
-
-            <h3 class="mb-2 my-2 font-weight-light">Informações básicas</h3>
-            <div class="form-group">
-                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Altura em metros ex: 1,80">
-            </div>
-            <div class="form-group">
-                <input type="number" class="form-control rounded-pill form-control-lg" placeholder="Peso em kgs ex: 96">
-            </div>
-
-            <a type="submit"
-                class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg" href="./dashboard.html">Cadastrar</a>
 
         </form>
 
     </div>
-    <!-- Login form Ends -->
+    <!-- New activity form ends -->
+
+    <!-- Option buttons start -->
+    <div class="container-fluid">
+
+        <div class="row mb-2">
+
+            <div class="col">
+
+                <a type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg"
+                    id="novaAtividade" href="./dashboard.html">Adicionar Atividade</a>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+
+                <a type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg"
+                    id="novaAtividade" href="./dashboard.html">Voltar para o Dashboard</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
