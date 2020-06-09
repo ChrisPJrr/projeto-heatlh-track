@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/activities.css">
 
     <title>Atividades</title>
 </head>
@@ -54,13 +54,72 @@
 
     <!-- Activities table starts -->
 
-    <div>
+    <div class="container-fluid justify-content-center col-md-9">
 
-        
+        <h3 class="mb-2 font-weight-light" id="h_table"> Histórico de Atividades</h3>
+
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Intensidade</th>
+                    <th scope="col">Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">25/05</th>
+                    <td>Bike</td>
+                    <td>Alta</td>
+                    <td>30min</td>
+                </tr>
+                <tr>
+                    <th scope="row">28/05</th>
+                    <td>Surf</td>
+                    <td>Média</td>
+                    <td>360min</td>
+                </tr>
+                <tr>
+                    <th scope="row">07/06</th>
+                    <td>Corrida</td>
+                    <td>Baixa</td>
+                    <td>50min</td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
 
     <!-- Activities table ends -->
+
+    <!-- Option buttons start -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col">
+
+                <a type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg"
+                    id="novaAtividade" href="./dashboard.html">Voltar para o Dashboard</a>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+
+                <a type="submit" class="btn mt-5 btn-custom btn-block text-uppercase rounded-pill btn-lg"
+                    href="./new_activities.html">Adicionar nova atividade</a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Option buttons ends -->
 
 
     <!-- Optional JavaScript -->

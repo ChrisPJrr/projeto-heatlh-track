@@ -37,11 +37,6 @@
     margin-right: 50px;
 }
 
-#botaoLogar {
-    background-color: black;
-    color: lightcoral;
-}
-
 #jumboBotao {
     background-color: #6b6661;
     margin-bottom: 0
@@ -49,4 +44,13 @@
 
 .item-nav {
     color: lightcoral
+}
+
+.btn-custom{
+    background: lightcoral;
+    border-color: lightcoral;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
 }
